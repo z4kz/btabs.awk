@@ -53,13 +53,13 @@
     }
 
     for (j = 1; j <= 4; ++j) {
-        printf("|-")
+        printf("|--")
         for (i = 1; i <= NF; ++i) {
             printf("-")
             printf("%s", note[i, j])
             printf("-")
         }
-        printf("-|")
+        printf("--|")
         printf("\n")
     }
 }
