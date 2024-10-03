@@ -1,5 +1,6 @@
 {
     for (i = 1; i <= NF; ++i) {
+        # gawk match() function
         match($i, /([eadg])([0-9]+)/, n)
 
         if (n[1] == "e") {
