@@ -1,9 +1,3 @@
-#!/usr/bin/env gawk
-
-#
-# btabs.awk
-#
-
 {
     for (i = 1; i <= NF; ++i) {
         match($i, /([eadg])([0-9]+)/, n)
