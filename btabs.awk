@@ -2,7 +2,7 @@
     for (i = 1; i <= NF; ++i) {
 
         # gawk match() function
-        match($i, /([eadg])([0-9]+)/, n)
+        match($i, /([eadg])([0-9]+)|([|])/, n)
 
         if (n[1] == "e") {
             note[i, 1] = "--"
@@ -40,6 +40,11 @@
             note[i, 2] = "--"
             note[i, 3] = "--"
             note[i, 4] = "--"
+        } else if (n[3] == "|") {
+            note[i, 1] = "-|"
+            note[i, 2] = "-|"
+            note[i, 3] = "-|"
+            note[i, 4] = "-|"
         } else {
             note[i, 1] = "--"
             note[i, 2] = "--"
