@@ -8,43 +8,54 @@
             note[i, 1] = "--"
             note[i, 2] = "--"
             note[i, 3] = "--"
+
             if (n[2] >= 0 && n[2] <= 9) {
                 note[i, 4] = n[2] "-"
             } else {
                 note[i, 4] = n[2]
             }
+
         } else if (n[1] == "a") {
             note[i, 1] = "--"
             note[i, 2] = "--"
+
             if (n[2] >= 0 && n[2] <= 9) {
                 note[i, 3] = n[2] "-"
             } else {
                 note[i, 3] = n[2]
             }
+
             note[i, 4] = "--"
+
         } else if (n[1] == "d") {
             note[i, 1] = "--"
+
             if (n[2] >= 0 && n[2] <= 9) {
                 note[i, 2] = n[2] "-"
             } else {
                 note[i, 2] = n[2]
             }
+
             note[i, 3] = "--"
             note[i, 4] = "--"
+
         } else if (n[1] == "g") {
             if (n[2] >= 0 && n[2] <= 9) {
                 note[i, 1] = n[2] "-"
             } else {
                 note[i, 1] = n[2]
             }
+
             note[i, 2] = "--"
             note[i, 3] = "--"
             note[i, 4] = "--"
+
         } else if (n[3] == "|") {
             note[i, 1] = "|-"
             note[i, 2] = "|-"
             note[i, 3] = "|-"
             note[i, 4] = "|-"
+
         } else {
             note[i, 1] = "--"
             note[i, 2] = "--"
@@ -58,10 +69,13 @@
     for (j = 1; j <= 4; ++j) {
         if (j == 1) {
           printf("G|--")
+
         } else if (j == 2) {
           printf("D|--")
+
         } else if (j == 3) {
           printf("A|--")
+
         } else if (j == 4) {
           printf("E|--")
         }
