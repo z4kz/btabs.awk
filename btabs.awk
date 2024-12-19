@@ -49,7 +49,16 @@
     }
 
     for (j = 1; j <= 4; ++j) {
-        printf("|--")
+        if (j == 1) {
+          printf("G|--")
+        } else if (j == 2) {
+          printf("D|--")
+        } else if (j == 3) {
+          printf("A|--")
+        } else if (j == 4) {
+          printf("E|--")
+        }
+
         for (i = 1; i <= NF; ++i) {
             printf("-")
             printf("%s", note[i, j])
