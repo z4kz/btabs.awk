@@ -53,6 +53,8 @@
         }
     }
 
+    printf("\n")
+
     for (j = 1; j <= 4; ++j) {
         if (j == 1) {
           printf("G|--")
@@ -72,4 +74,6 @@
         printf("--|")
         printf("\n")
     }
+
+    printf("\n")
 }
