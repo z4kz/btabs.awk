@@ -41,10 +41,10 @@
             note[i, 3] = "--"
             note[i, 4] = "--"
         } else if (n[3] == "|") {
-            note[i, 1] = "-|"
-            note[i, 2] = "-|"
-            note[i, 3] = "-|"
-            note[i, 4] = "-|"
+            note[i, 1] = "|-"
+            note[i, 2] = "|-"
+            note[i, 3] = "|-"
+            note[i, 4] = "|-"
         } else {
             note[i, 1] = "--"
             note[i, 2] = "--"
