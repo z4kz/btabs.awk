@@ -71,6 +71,7 @@
             printf("%s", note[i, j])
             printf("-")
         }
+
         printf("--|")
         printf("\n")
     }
